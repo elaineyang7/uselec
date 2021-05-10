@@ -1,0 +1,31 @@
+@import './variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "SFProText-Light";
+  line-height: 1.5;
+  font-size: 14px;
+  color: $gray-dark;
+  letter-spacing: $spacing;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: $gray-dark;
+  behavior: expression(this.onFocus=this.blur()); /* for IE */
+}

@@ -1,0 +1,37 @@
+@import 'variables';
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: $spacing;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  color: $gray-dark;
+}
+
+h1 {
+  font-family: "SFProText-Bold";
+  font-size: 64px;
+}
+
+h2 {
+  font-family: "SFProText-Medium";
+  font-size: 48px;
+}
+
+h3 {
+  font-family: "SFProText-Regular";
+  font-size: 32px;
+}
+
+h4 {
+  font-family: "SFProText-Semibold";
+  font-size: 28px;
+}
+
+p {
+  font-family: "SFProText-Light";
+  font-size: 16px;
+}
