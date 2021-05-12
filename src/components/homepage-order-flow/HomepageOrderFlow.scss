@@ -1,0 +1,20 @@
+@import '../../sassStyles/variables';
+
+.order-flow {
+  width: 1280px;
+  height: 636px;
+  position: relative;
+  margin: 0 auto;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 84px;
+  }
+
+  &__container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+  }
+}

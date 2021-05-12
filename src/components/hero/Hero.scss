@@ -1,0 +1,50 @@
+@import '../../sassStyles/variables';
+
+.banner {
+  width: 100%;
+  position: relative;
+  overflow-y: hidden;
+  z-index: -10;
+
+  img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center 20%;
+  }
+
+  .about {
+    width: 1280;
+    //height: 604px;
+    position: relative;
+    text-align: center;
+
+    h1 {
+      font-size: 64px;
+    }
+
+    .intro {
+      width: 590px;
+      position: relative;
+      margin: 0 auto;
+
+      a {
+        font-family: SFProText-Medium;
+        cursor: pointer;
+
+        .about-btn {
+          width: 130px;
+          height: 54px;
+          margin-top: 40px;
+          margin-bottom: 96px;
+          font-size: 18px;
+          color: $white-01;
+          background-color: $blue-dark;
+          padding: 16px;
+          border-style: none;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}

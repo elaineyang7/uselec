@@ -1,0 +1,38 @@
+@import '../../sassStyles/variables';
+
+.card {
+  width: 280px;
+  height: 400px;
+  position: relative;
+  top: 0;
+  left: -26px;
+  text-align: center;
+  margin: 0 26px;
+  border-radius: 15px;
+  background-color: rgb(244, 249, 255);
+  transition: 0.5s ease-in;
+
+  &__icon {
+    width: 120px;
+    height: 120px;
+    margin: 48px 80px;
+  }
+
+  &__desc {
+    width: 225px;
+    max-height: 50px;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .request {
+    width: 140px;
+  }
+
+  &:hover {
+    background-color: #8aafd27a;
+    transform: translateY(-24px);
+    transition: 0.5s ease-in;
+  }
+}
