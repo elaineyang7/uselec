@@ -20,7 +20,6 @@ const HomepageOrderFlow = () => {
             desc={step.desc}
           />
         ))}
-        
       </div>
     </section>
   );

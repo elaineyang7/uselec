@@ -1,0 +1,12 @@
+@import '../../sassStyles/variables';
+
+.benefits {
+  width: 100%;
+  height: 1192px;
+  
+  &__container {
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+  }
+}

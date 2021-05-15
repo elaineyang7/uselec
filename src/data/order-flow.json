@@ -2,25 +2,25 @@
   "steps": [
     {
       "id": "0",
-      "icon": "../assets/request.svg",
+      "icon": "/public/images/svg/request.svg",
       "title": "Request",
       "desc": "寫信詢問所需電子零件及報價"
     },
     {
       "id": "1",
-      "icon": "../assets/contract.svg",
+      "icon": "/public/images/svg/contract.svg",
       "title": "Contract",
       "desc": "確認採購訂單，明確商品、價格、運送費用"
     },
     {
       "id": "2",
-      "icon": "../assets/shipping.svg",
+      "icon": "/public/images/svg/shipping.svg",
       "title": "Shipping",
       "desc": "Uselec 寄送貨物"
     },
     {
       "id": "3",
-      "icon": "../assets/receive.svg",
+      "icon": "/public/images/svg/receive.svg",
       "title": "Receive",
       "desc": "貨物送上門"
     }

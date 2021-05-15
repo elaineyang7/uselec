@@ -1,0 +1,18 @@
+{
+  "benefits": [
+    {
+      "id": "0",
+      "image": "/public/images/svg/easy.svg",
+      "alt": "Easy procurement process",
+      "title": "​採購流程容易",
+      "desc": "來信詢問採購商品及報價，簽訂採購訂單，即安排出貨。流程簡易，流程簡易，提供中文服務，海外廠商英文溝通交給Uselec，客戶免煩惱。"
+    },
+    {
+      "id": "1",
+      "image": "/public/images/svg/fast.svg",
+      "alt": "Fast delivery",
+      "title": "快速供貨",
+      "desc": "Uselec始終提供客戶最佳品質、準時交貨、最高成本效益的支援。我們專注於提供電子產品，其中包括半導體集成電路、被動電子零件、電腦周邊產品以及網絡設備等。"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+@import '../../sassStyles/variables';
+
+.benefit {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  margin-bottom: 96px;
+
+  &__imgBox {
+    grid-row: 1/1;
+    grid-column: 7/span 6;
+    text-align: start;
+    align-items: center;
+
+    img {
+      width: 80%;
+    }
+  }
+
+  &__content {
+    grid-row: 1/1;
+    grid-column: 3/span 4;
+    padding: 120px 0;
+  }
+
+  &__desc {
+    width: 325px;
+  }
+
+  &:nth-of-type(2n) {
+    .benefit__imgBox {
+      grid-column: 1/span 6;
+      text-align: end;
+    }
+  
+    .benefit__content {
+      grid-row: 1/1;
+      grid-column: 8/span 4;
+    }
+
+    .benefit__desc {
+      width: 350px;
+    }
+  } 
+}

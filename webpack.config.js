@@ -32,7 +32,12 @@ module.exports = {
         {
           test: /\.(png|svg|jpg|gif|pdf)$/,
           use: [
-            'file-loader'
+            {
+              loader: 'file-loader',
+              options: {
+                name: 'assets/[name].[ext]'
+              }
+            }
           ]
         },
         {
@@ -43,6 +48,29 @@ module.exports = {
               options: {
                 name: '[name].[ext]',
                 outputPath: 'fonts/'
+              }
+            }
+          ]
+        },
+        {
+          test: /\.svg/,
+          use: {
+              loader: 'svg-url-loader'
+          }
+        },
+  
+        {
+          test: /\.svg$/,
+          use: [
+            "babel-loader",
+            {
+              loader: "react-svg-loader",
+              options: {
+                svgo: {
+                  plugins: [{ removeTitle: false }],
+                  floatPrecision: 2
+                },
+                jsx: true
               }
             }
           ]
