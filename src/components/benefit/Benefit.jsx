@@ -1,12 +1,14 @@
 import React from 'react';
 
+import SvgIcon from '../svg-icon/SvgIcon';
+
 import './Benefit.scss';
 
 const Benefit = ( {image, alt, title, desc} ) => {
   return (
     <div className="benefit">
       <div className="benefit__imgBox">
-        <img 
+        <SvgIcon 
           src={image} 
           alt={alt}
         />

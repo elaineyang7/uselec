@@ -1,8 +1,8 @@
 import React from 'react';
 
-import './Input.scss';
+import './TextArea.scss';
 
-const Input = ( {id, name, placeholder, onChange} ) => {
+const TextArea = ( {id, name, placeholder, onChange} ) => {
   return (
     <div className="input-box">
       <label 
@@ -12,7 +12,7 @@ const Input = ( {id, name, placeholder, onChange} ) => {
       >
         {name}
       </label>
-      <input
+      <textarea
         placeholder={placeholder}
         name={name}
         id={id}
@@ -22,4 +22,4 @@ const Input = ( {id, name, placeholder, onChange} ) => {
   );
 }
 
-export default Input;
+export default TextArea;

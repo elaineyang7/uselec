@@ -1,0 +1,16 @@
+{
+  "informations": [
+    {
+      "image": "phone.svg",
+      "info": "+1 650-968-2828"
+    },
+    {
+      "image": "email.svg",
+      "info": "info@uselec.com"
+    },
+    {
+      "image": "location.svg",
+      "info": "4966 El Camino Real #112 Los Altos, CA 94022"
+    }
+  ]
+}

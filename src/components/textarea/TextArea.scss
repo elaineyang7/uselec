@@ -1,0 +1,30 @@
+@import '../../sassStyles/variables';
+
+.input-box {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  label {
+    font-size: 20px;
+    margin-bottom: 8.5px;
+  }
+
+  textarea {
+    width: 636px;
+    height: 185px;
+    border: 1px solid $blue-regular;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 20px 16px;
+    margin-bottom: 16px;
+
+    &::placeholder {
+      font-size: 18px;
+      font-family: SFProText-Thin;
+      color: $blue-regular;
+    }
+  }
+ 
+}
