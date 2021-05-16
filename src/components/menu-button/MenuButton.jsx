@@ -17,7 +17,7 @@ const StyledBurger = styled.button`
   background: transparent;
   border: none;
   cursor: pointer;
-  z-index: 10;
+  z-index: 1;
 
   @media (max-width: 768px) {
     display: flex;

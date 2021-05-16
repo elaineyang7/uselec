@@ -1,5 +1,9 @@
 @import '../../sassStyles/variables';
 
+nav {
+  z-index: -20;
+}
+
 .slide-menu {
   width: 100vw;
   height: 180px;
@@ -9,7 +13,7 @@
   background-color: $blue-light;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
-  z-index: -20;
+  z-index: -50;
   
   .menu {
     width: 100%;

@@ -1,8 +1,10 @@
 import React from 'react';
 
+import { informations } from '../../data/contact-info.json';
 import Input from '../input/Input';
 import TextArea from '../textarea/TextArea';
 import SubmitButton from '../submit-button/SubmitButton';
+import Info from '../info/Info';
 
 import './ContactForm.scss';
 
@@ -35,7 +37,17 @@ const ContactForm = () => {
           <SubmitButton />
         </div>
       </form>
-      <div className="contact-info"></div>
+      <div className="contact-info">
+        {informations.map( (information, index) => (
+          <Info 
+            key={index}
+            icon={information.icon}
+            info={information.info}
+            alt={information.alt}
+          />
+        ))}
+        
+      </div>
     </div>
   );
 }
