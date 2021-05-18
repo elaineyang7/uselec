@@ -5,9 +5,9 @@
   height: 400px;
   position: relative;
   top: 0;
-  left: -26px;
+  left: 0;
   text-align: center;
-  margin: 0 26px;
+  margin: 0 20px;
   border-radius: 15px;
   background-color: rgb(244, 249, 255);
   transition: 0.5s ease-in;
@@ -15,7 +15,9 @@
   &__icon {
     width: 120px;
     height: 120px;
-    margin: 48px 80px;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 48px;
 
     img {
       width: 100%;
@@ -43,7 +45,21 @@
 
 @media (max-width: 1300px) {
   .card {
-    width: 250px;
-    margin: 0 16px;
+    width: 230px;
+    margin: 0 9px;
+  }
+}
+
+@media (max-width: 996px) {
+  .card {
+    min-width: 280px;
+    margin: 0 32px 32px 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    min-width: 350px;
+    margin: 0 32px 32px 32px;
   }
 }
