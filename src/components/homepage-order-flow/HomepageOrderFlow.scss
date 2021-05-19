@@ -1,10 +1,19 @@
 @import '../../sassStyles/variables';
+@import '../../sassStyles//mixins';
 
 .order-flow {
   width: 100%;
   height: 636px;
   position: relative;
   margin: 0 auto;
+
+  @include for-tablet-landscape {
+    height: 1100px;
+  }
+
+  @include for-tablet-portrait {
+    height: 1874px;
+  }
 
   h2 {
     text-align: center;
@@ -17,10 +26,27 @@
     display: flex;
     margin: 0 auto;
     flex-wrap: wrap;
+
+    @include for-laptop {
+      width: 996px;
+      min-width: 996px;
+    }
+
+    @include for-tablet-landscape {
+      width: 688px;
+      min-width: 688px;
+      height: 864px;
+    }
+
+    @include for-tablet-portrait {
+      width: 350px;
+      min-width: 350px;
+      height: 1320px;
+    }
   }
 }
 
-@media (max-width: 1300px) {
+/*@media (max-width: 1300px) {
   .order-flow {
     width: 100%;
 
@@ -46,7 +72,7 @@
 
 @media (max-width: 768px) {
   .order-flow {
-    height: 1564px;
+    height: 1874px;
 
     &__container {
       width: 350px;
@@ -54,4 +80,4 @@
       height: 1320px;
     }
   }
-}
+}*/

@@ -12,6 +12,17 @@
   background-color: rgb(244, 249, 255);
   transition: 0.5s ease-in;
 
+  span {
+    position: absolute;
+    top: 8px;
+    left: 24px;
+    font-size: 48px;
+    font-family: moret, serif;
+    font-weight: 800;
+    font-style: italic;
+    color: #5472aab0;
+  }
+
   &__icon {
     width: 120px;
     height: 120px;
