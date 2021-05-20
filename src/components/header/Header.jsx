@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import MenuButton from '../menu-button/MenuButton.jsx';
 import SlideMenu from '../slide-menu/SlideMenu';
@@ -12,9 +13,12 @@ const Header = () => {
   return (
     <header>
       <div className="header__container">
-        <a href="/">
+        <Link 
+          className='option' 
+          to='/'
+        >
           <h3>Uselec</h3>
-        </a>
+        </Link>
         <div 
           ref={node} 
           className="menuBtn"
@@ -25,19 +29,19 @@ const Header = () => {
         <div className="menu">
           <ul className="menu__links">
             <li className="menu__link">
-              <a href="/">
+              <Link className='option' to='/about'>
                 About
-              </a>
+              </Link>
             </li>
             <li className="menu__link">
-              <a href="/">
+            <Link className='option' to='/orderflow'>
                 Order Flow
-              </a>
+              </Link>
             </li>
             <li className="menu__link">
-              <a href="/">
+              <Link className='option' to='/contact'>
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

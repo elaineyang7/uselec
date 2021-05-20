@@ -22,7 +22,7 @@ header {
   grid-template-columns: 2fr 1fr;
   z-index: 20;
 
-  a {
+  .option {
     h3 {
       position: relative;
       top: 50%;
@@ -58,7 +58,7 @@ header {
   &__link {
     font-size: 16px;
 
-    a:hover {
+    .option:hover {
       color: $blue-dark;
     }
   }

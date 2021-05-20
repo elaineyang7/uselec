@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import Header from './components/header/Header';
-import Hero from './components/hero/Hero';
-import HomepageOrderFlow from './components/homepage-order-flow/HomepageOrderFlow';
-import Benefits from './components/benefits/Benefits';
-import Contact from './components/contact/Contact';
-import Footer from './components/footer/Footer';
+import HomePage from './pages/homepage/HomePage';
+import OrderFlow from './pages/orderflow/OrderFlow';
 
 import './index.css';
 
@@ -13,12 +11,11 @@ class App extends Component {
   render(){
     return(
       <div>
-        <Header />
-        <Hero />
-        <HomepageOrderFlow />
-        <Benefits />
-        <Contact />
-        <Footer />
+        <BrowserRouter>
+          <Header />
+          <Route path="/" component={HomePage} />
+          <Route path="/orderflow" component={OrderFlow} />
+        </BrowserRouter>
       </div>
     );
   }

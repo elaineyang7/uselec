@@ -29,20 +29,27 @@
       margin: 0 auto;
 
       a {
+        width: 130px;
+        height: 54px;
+        position: relative;
+        top: 40px;
         font-family: SFProText-Medium;
         cursor: pointer;
 
         .about-btn {
           width: 130px;
           height: 54px;
-          margin-top: 40px;
-          margin-bottom: 96px;
           font-size: 18px;
           color: $white-01;
           background-color: $blue-dark;
           padding: 16px;
           border-style: none;
           border-radius: 5px;
+          margin-bottom: 96px;
+
+          &::hover {
+            background-color: $blue-regular;
+          }
         }
       }
     }

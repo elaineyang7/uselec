@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from "styled-components";
 
 import './SlideMenu.scss';
@@ -15,31 +16,34 @@ const SlideMenu = ({ open, setOpen }) => {
     >
       <ul className="menu__links">
         <li className="menu__link line">
-          <a 
-            href="/"
+          <Link 
+            className='option' 
+            to='/about'
             open={open} 
             onClick={() => setOpen(!open)}
           >
             About
-          </a>
+          </Link>
         </li>
         <li className="menu__link line">
-          <a 
-            href="/"
+          <Link 
+            className='option' 
+            to='/orderflow'
             open={open} 
             onClick={() => setOpen(!open)}
           >
             Order Flow
-          </a>
+          </Link>
         </li>
         <li className="menu__link">
-          <a 
-            href="/"
+          <Link 
+            className='option' 
+            to='/contact'
             open={open} 
             onClick={() => setOpen(!open)}
           >
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
     </StyledMenu>
