@@ -3,7 +3,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import Header from './components/header/Header';
 import HomePage from './pages/homepage/HomePage';
-import OrderFlow from './pages/orderflow/OrderFlow';
+import OrderFlow from './pages/orderflow/OrderFlow1';
 
 import './index.css';
 
@@ -13,8 +13,10 @@ class App extends Component {
       <div>
         <BrowserRouter>
           <Header />
-          <Route path="/" component={HomePage} />
-          <Route path="/orderflow" component={OrderFlow} />
+          <Switch>
+            <Route exact path="/" component={HomePage} />
+            <Route exact path="/orderflow" component={OrderFlow} />
+          </Switch>
         </BrowserRouter>
       </div>
     );

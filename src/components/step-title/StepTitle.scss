@@ -1,0 +1,17 @@
+@import '../../sassStyles/variables';
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap');
+
+.title {
+  position: relative;
+  margin: 0 0 64px 0;
+
+  span {
+    position: absolute;
+    top: -48px;
+    left: 360px;
+    font-family: 'DM Serif Display', serif;
+    font-size: 150px;
+    color: $white-01;
+    opacity: 0.2;
+  }
+}
