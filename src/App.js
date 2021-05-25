@@ -3,7 +3,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import Header from './components/header/Header';
 import HomePage from './pages/homepage/HomePage';
-import OrderFlow from './pages/orderflow/OrderFlow1';
+import OrderFlow from './pages/orderflow/OrderFlow';
 
 import './index.css';
 

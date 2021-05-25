@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-scroll';
 
 import { steps } from '../../data/order-flow-details.json';
 import StepSection from '../../components/step-section/StepSection';
@@ -10,49 +11,100 @@ class OrderFlow extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      listIndex: 0,
-      content: steps[0]
+      listIndex: "0"
     };
   }
 
   handleClick(props) {
     this.setState ({
-      listIndex: props,
-      content: steps[props]
+      listIndex: props
     })
+    console.log(this.state.listIndex)
   }
+
+  /*
+  <ul>
+            {steps.map( (step, index) => (
+              <li
+                key={index}
+                onClick={() => this.handleClick(index)}
+                className={`${index === this.state.listIndex ? 'active' : ''}`}
+              >
+                <Step
+                  id={index}
+                  step={step.step}
+                  onClick={() => this.handleClick(index)}
+                  className={`${index === this.state.listIndex ? 'active' : ''}`}
+                />
+              </li>
+            ))}
+          </ul>
+          */
 
   render() {
     return (
       <div className="orderflow">
-        <h1>Order Flow</h1>
+        <div className="page-title">
+          <h1>Order Flow</h1>
+        </div>
         <aside className="steps">
-          <div className="steps__container">
-            <div className="indicator">
-              <div className="indicator__progress"></div>
-            </div>
-            <ul>
-              {steps.map( (step, index) => (
-                <li
-                  key={index}
-                  onClick={() => this.handleClick(index)}
-                  className={`${index === this.state.listIndex ? 'active' : ''}`}
-                >
-                  <Step
-                    id={index}
-                    step={step.step}
-                  />
-                </li>
-              ))}
-            </ul>
+        <div className="steps__container">
+          <div className="indicator">
+            <div className="indicator__progress"></div>
           </div>
+          <ul>
+            <li>
+              <Link 
+                className="step"
+                to={"0"}
+                spy={true} 
+                smooth={true} 
+                duration={1000}
+                offset={-374}
+              >
+                01 &nbsp; Request
+              </Link>
+            </li>
+            <li>
+              <Link 
+                className="step"
+                to={"1"}
+                spy={true} 
+                smooth={true} 
+                duration={1000}
+                offset={-374}
+              >
+                02 &nbsp; Contract
+              </Link>
+            </li>
+            <li>
+              <Link 
+                className="step"
+                to={"2"}
+                spy={true} 
+                smooth={true} 
+                duration={1000}
+                offset={-374}
+              >
+                03 &nbsp; Shipping
+              </Link>
+            </li>
+            <li>
+              <Link 
+                className="step"
+                to={"3"}
+                spy={true} 
+                smooth={true} 
+                duration={1000}
+                offset={-374}
+              >
+                04 &nbsp; Receive
+              </Link>
+            </li>
+          </ul>
+        </div>
         </aside>
         <div className="flow">
-          <StepSection 
-            key={this.state.listIndex}
-            id={this.state.listIndex}
-            step={this.state.content}
-          />
           {steps.map( (step, index) => (
             <StepSection 
               key={index}

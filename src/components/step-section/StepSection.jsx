@@ -7,7 +7,7 @@ import './StepSection.scss';
 
 const StepSection = ( {id, step} ) => {
   return (
-    <section>
+    <section id={id}>
       <StepTitle
         id={id}
         title={step.title}

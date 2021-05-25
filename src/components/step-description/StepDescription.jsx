@@ -6,10 +6,10 @@ const StepDescription = ( {id, desc} ) => {
 
   return (
     <div className="description">
-        <p>
-          {array.map(comment => 
+        <p key={id}>
+          {array.map((comment, index) => 
             <React.Fragment
-              key={id}
+              key={index}
             >
               {comment}<br/>
             </React.Fragment>
