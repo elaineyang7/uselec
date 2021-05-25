@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { steps } from '../../data/order-flow.json';
 import OrderFlowCard from '../order-flow-card/OrderFlowCard';
@@ -12,13 +13,15 @@ const HomepageOrderFlow = () => {
       <div className="order-flow__container">
         
         {steps.map( (step, index) => (
-          <OrderFlowCard 
-            key={index}
-            id={step.id}
-            icon={step.icon}
-            title={step.title}
-            desc={step.desc}
-          />
+          <Link to='/orderflow'>
+            <OrderFlowCard 
+              key={index}
+              id={step.id}
+              icon={step.icon}
+              title={step.title}
+              desc={step.desc}
+            />
+          </Link>
         ))}
       </div>
     </section>
