@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 import { steps } from '../../data/order-flow.json';
 import OrderFlowCard from '../order-flow-card/OrderFlowCard';
@@ -7,13 +7,19 @@ import OrderFlowCard from '../order-flow-card/OrderFlowCard';
 import './HomepageOrderFlow.scss';
 
 const HomepageOrderFlow = () => {
+  const scrollWithOffset = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -374; 
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
+  }
+
   return (
     <section className="order-flow">
       <h2>Order Flow</h2>
       <div className="order-flow__container">
         
         {steps.map( (step, index) => (
-          <Link to='/orderflow'>
+          <HashLink to={`/orderflow/#${index}`} scroll={el => scrollWithOffset(el)}>
             <OrderFlowCard 
               key={index}
               id={step.id}
@@ -21,7 +27,7 @@ const HomepageOrderFlow = () => {
               title={step.title}
               desc={step.desc}
             />
-          </Link>
+          </HashLink>
         ))}
       </div>
     </section>

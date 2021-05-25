@@ -1,9 +1,14 @@
 @import '../../sassStyles/variables';
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap');
+@import '../../sassStyles//mixins';
 
 .title {
   position: relative;
   margin: 0 0 64px 0;
+
+  h3 {
+    color: #1F3968;
+  }
 
   span {
     position: absolute;
@@ -13,5 +18,15 @@
     font-size: 150px;
     color: $white-01;
     opacity: 0.2;
+
+    @include for-tablet-landscape {
+      left: 300px;
+    }
+
+    @include for-tablet-portrait  {
+      font-size: 100px;
+      top: -10px;
+      left: 150px;
+    }
   }
 }

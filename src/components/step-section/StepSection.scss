@@ -1,6 +1,11 @@
 @import '../../sassStyles/variables';
+@import '../../sassStyles//mixins';
 
 section {
   width: 100%;
-  margin-bottom: 150px;
+  margin-bottom: 300px;
+
+  @include for-phone {
+    margin-bottom: 150px;
+  }
 }
