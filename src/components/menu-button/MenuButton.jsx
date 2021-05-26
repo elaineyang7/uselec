@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const StyledBurger = styled.button`
   position: absolute;
-  top: 20px;
+  top: 0;
   right: 20px;
   font-size: 32px;
   cursor: pointer;

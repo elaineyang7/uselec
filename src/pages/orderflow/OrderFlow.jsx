@@ -22,25 +22,6 @@ class OrderFlow extends Component {
     console.log(this.state.listIndex)
   }
 
-  /*
-  <ul>
-            {steps.map( (step, index) => (
-              <li
-                key={index}
-                onClick={() => this.handleClick(index)}
-                className={`${index === this.state.listIndex ? 'active' : ''}`}
-              >
-                <Step
-                  id={index}
-                  step={step.step}
-                  onClick={() => this.handleClick(index)}
-                  className={`${index === this.state.listIndex ? 'active' : ''}`}
-                />
-              </li>
-            ))}
-          </ul>
-          */
-
   render() {
     return (
       <div className="orderflow">

@@ -21,12 +21,13 @@
 
   .about {
     width: 1280;
-    //height: 604px;
+    min-height: 280px;
     position: relative;
     text-align: center;
 
     @include for-tablet-landscape {
       width: 80%;
+      min-height: 350px;
       margin: 0 auto;
     }
 
@@ -38,6 +39,7 @@
       width: 590px;
       position: relative;
       margin: 0 auto;
+      margin-bottom: 96px;
 
       @include for-tablet-landscape {
         width: 100%;
@@ -47,15 +49,21 @@
         width: 90%;
       }
 
-      a {
+      .learn-more {
         width: 130px;
         height: 54px;
         position: relative;
-        top: 40px;
-        font-family: SFProText-Medium;
-        cursor: pointer;
+        top: 48px;
+        font-family: SFProText-regular;
+        font-size: 18px;
+        color: $white-01;
+        background-color: $blue-dark;
+        padding: 16px;
+        border-style: none;
+        border-radius: 5px;
+        letter-spacing: 1px;
 
-        .about-btn {
+        /*.about-btn {
           width: 130px;
           height: 54px;
           font-size: 18px;
@@ -64,11 +72,10 @@
           padding: 16px;
           border-style: none;
           border-radius: 5px;
-          margin-bottom: 96px;
+        }*/
 
-          &::hover {
-            background-color: $blue-regular;
-          }
+        &::hover {
+          background-color: $blue-regular;
         }
       }
     }

@@ -99,6 +99,7 @@
           position: relative;
           top: -10px;
           padding-bottom: 60px;
+          cursor: pointer;
 
           @include for-tablet-portrait  {
             padding-bottom: 20px;
