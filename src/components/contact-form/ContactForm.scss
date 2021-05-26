@@ -72,7 +72,7 @@
     justify-self: end;
     
     @include for-laptop {
-      width: 100%;
+      width: 90%;
       height: 100%;
       top: 0;
       grid-row: 1/1;
@@ -82,7 +82,7 @@
       flex-wrap: wrap;
       justify-content: space-around;
       align-items: center;
-      border-radius: 0;
+      margin: 0 auto;
     }
 
     @include for-tablet-landscape {
