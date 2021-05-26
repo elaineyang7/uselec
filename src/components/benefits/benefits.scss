@@ -1,9 +1,22 @@
 @import '../../sassStyles/variables';
+@import '../../sassStyles//mixins';
 
 .benefits {
   width: 100%;
   height: 1192px;
   
+  @include for-laptop {
+    height: 892px;
+  }
+
+  @include for-tablet-landscape {
+    height: 712px;
+  }
+
+  @include for-phone {
+    height: 862px;
+  }
+
   &__container {
     max-width: 1280px;
     height: 100%;

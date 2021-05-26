@@ -1,4 +1,5 @@
 @import '../../sassStyles/variables';
+@import '../../sassStyles//mixins';
 
 .benefit {
   width: 100%;
@@ -8,14 +9,45 @@
   grid-template-columns: repeat(12,1fr);
   margin-bottom: 96px;
 
+  @include for-tablet-landscape {
+    height: 410px;
+  }
+
+  @include for-phone {
+    grid-template-rows: 200px auto;
+  }
+
   &__imgBox {
     grid-row: 1/1;
     grid-column: 7/span 6;
     text-align: start;
     align-items: center;
 
+    @include for-tablet-landscape {
+      text-align: end;
+    }
+
+    @include for-tablet-portrait {
+      grid-column: 7/span 5;
+    }
+
+    @include for-phone {
+      grid-row: 1/1;
+      grid-column: 2/span 10;
+    }
+
     img {
       width: 80%;
+
+      @include for-tablet-portrait {
+        width: 100%;
+        margin-top: 15%;
+      }
+
+      @include for-phone {
+        height: 100%;
+        margin-top: 0;
+      }
     }
   }
 
@@ -23,25 +55,65 @@
     grid-row: 1/1;
     grid-column: 3/span 4;
     padding: 120px 0;
+
+    @include for-tablet-landscape {
+      grid-column: 2/span 4;
+    }
+
+    @include for-phone {
+      grid-row: 2/-1;
+      grid-column: 3/span 8;
+      padding: 60px 0;
+    }
   }
 
   &__desc {
     width: 325px;
+
+    @include for-tablet-landscape {
+      width: 100%;
+    }
   }
 
   &:nth-of-type(2n) {
     .benefit__imgBox {
       grid-column: 1/span 6;
       text-align: end;
+
+      @include for-tablet-landscape {
+        text-align: start;
+      }
+
+      @include for-tablet-portrait {
+        grid-column: 2/span 5;
+      }
+
+      @include for-phone {
+        grid-rows: 1/1;
+        grid-column: 2/span 10;
+      }
     }
   
     .benefit__content {
       grid-row: 1/1;
-      grid-column: 8/span 4;
+      grid-column: 7/span 4;
+
+      @include for-tablet-landscape {
+        grid-column: 8/span 4;
+      }
+
+      @include for-phone {
+        grid-row: 2/-1;
+        grid-column: 3/span 8;
+      }
     }
 
     .benefit__desc {
       width: 350px;
+
+      @include for-tablet-landscape {
+        width: 100%;
+      }
     }
   } 
 }
