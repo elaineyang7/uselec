@@ -8,11 +8,11 @@
   margin: 0 auto;
 
   @include for-tablet-landscape {
-    height: 1100px;
+    height: 1250px;
   }
 
   @include for-tablet-portrait {
-    height: 1874px;
+    height: 2274px;
   }
 
   h2 {
