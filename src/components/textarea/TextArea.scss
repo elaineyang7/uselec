@@ -24,6 +24,8 @@
     border-radius: 5px;
     padding: 20px 16px;
     margin-bottom: 24px;
+    font-size: 18px;
+    font-family: SFProText-Thin;
 
     @include for-tablet-landscape {
       width: 400px;
@@ -31,6 +33,7 @@
 
     @include for-phone {
       width: 300px;
+      font-size: 14px;
     }
 
     &::placeholder {

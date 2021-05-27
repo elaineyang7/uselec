@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import Header from './components/header/Header';
 import HomePage from './pages/homepage/HomePage';
+import About from './pages/about/About';
 import OrderFlow from './pages/orderflow/OrderFlow';
 import ContactPage from './pages/contact/ContactPage';
 
@@ -16,6 +17,7 @@ class App extends Component {
           <Header />
           <Switch>
             <Route exact path="/" component={HomePage} />
+            <Route exact path="/about" component={About} />
             <Route exact path="/orderflow" component={OrderFlow} />
             <Route exact path="/contact" component={ContactPage} />
           </Switch>

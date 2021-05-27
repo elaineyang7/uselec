@@ -19,7 +19,6 @@ class OrderFlow extends Component {
     this.setState ({
       listIndex: props
     })
-    console.log(this.state.listIndex)
   }
 
   render() {

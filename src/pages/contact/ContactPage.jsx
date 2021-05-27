@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Contact from '../../components/contact/Contact';
+import ContactForm from '../../components/contact-form/ContactForm';
 import Footer from '../../components/footer/Footer';
 
 import './ContactPage.scss';
@@ -11,7 +11,7 @@ const ContactPage = () => {
       <div className="page-title">
         <h1>Contact</h1>
       </div>
-      <Contact />
+      <ContactForm />
       <Footer />
     </div>
   );
