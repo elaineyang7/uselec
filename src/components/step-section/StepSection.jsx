@@ -1,7 +1,7 @@
 import React from 'react';
 
-import StepTitle from '../step-title/StepTitle';
-import StepDescription from '../step-description/StepDescription';
+import StepTitle from '../common/step-title/StepTitle';
+import StepDescription from '../common/step-description/StepDescription';
 
 import './StepSection.scss';
 

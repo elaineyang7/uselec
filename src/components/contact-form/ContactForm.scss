@@ -56,6 +56,26 @@
       h2 {
         margin-top: 56px;
       }
+
+      .error {
+        position: relative;
+        top: 30px;
+        right: 0;
+        display: block;
+        font-size: 12px;
+        color: red;
+        text-align: right;
+      }
+
+      .errorArea {
+        position: relative;
+        top: 30px;
+        right: 0;
+        display: block;
+        font-size: 12px;
+        color: red;
+        text-align: right;
+      }
     }
   }
 

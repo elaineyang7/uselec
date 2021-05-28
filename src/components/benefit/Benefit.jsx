@@ -1,6 +1,6 @@
 import React from 'react';
 
-import SvgIcon from '../svg-icon/SvgIcon';
+import SvgIcon from '../common/svg-icon/SvgIcon';
 
 import './Benefit.scss';
 

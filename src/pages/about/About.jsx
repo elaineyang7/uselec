@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className="about">
       <div className="page-title">
-        <h1>About</h1>
+        <h1>About Uselec</h1>
       </div>
     </div>
     /*<section class="ps-timeline-sec">

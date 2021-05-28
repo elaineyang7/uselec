@@ -19,9 +19,12 @@ const HomepageOrderFlow = () => {
       <div className="order-flow__container">
         
         {steps.map( (step, index) => (
-          <HashLink to={`/orderflow/#${index}`} scroll={el => scrollWithOffset(el)}>
+          <HashLink 
+            to={`/orderflow/#${index}`} 
+            scroll={el => scrollWithOffset(el)}
+            key={index}
+          >
             <OrderFlowCard 
-              key={index}
               id={step.id}
               icon={step.icon}
               title={step.title}
