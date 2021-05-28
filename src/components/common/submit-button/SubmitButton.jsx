@@ -4,6 +4,7 @@ import './SubmitButton.scss';
 
 const SubmitButton = ({ onClick }) => (
   <button 
+    className="submit-button"
     onClick={onClick}
   >
     Submit

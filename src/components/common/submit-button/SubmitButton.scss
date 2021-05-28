@@ -12,6 +12,7 @@ button {
   font-size: 24px;
   line-height: 24px;
   margin-top: 16px;
+  cursor: not-allowed;
 
   @include for-tablet-portrait {
     width: 180px;
@@ -20,7 +21,12 @@ button {
   }
 }
 
-.valid {
+.contact-form.success .contact-form__container .submit-button {
   background-color: $blue-dark;
   color: $white-03;
+  cursor: pointer;
+}
+
+.contact-form.success .contact-form__container .submit-button:hover {
+  background-color: #2d5091;
 }

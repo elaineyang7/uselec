@@ -63,7 +63,7 @@
         right: 0;
         display: block;
         font-size: 12px;
-        color: red;
+        color: $red-error;
         text-align: right;
       }
 
@@ -73,7 +73,7 @@
         right: 0;
         display: block;
         font-size: 12px;
-        color: red;
+        color: $red-error;
         text-align: right;
       }
     }
@@ -110,3 +110,4 @@
     }
   }
 }
+

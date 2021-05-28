@@ -15,7 +15,9 @@ class ContactForm extends Component {
     this.state = {
       fields: {},
       errors: {},
+      formValid: false
     }
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange(field, event){    		
@@ -29,40 +31,35 @@ class ContactForm extends Component {
   handleValidation(field, event) {
     let fields = this.state.fields;
     let errors = this.state.errors;
-    let formIsValid = true;
+    let formIsValid = this.state.formValid;
 
     //Name
-    if((!fields["name"] || fields["name"] === "") && (field === "name")) {
-      formIsValid = false;
+    if ((!fields["name"] || fields["name"] === "") && (field === "name")) {
       errors["name"] = "This field is required.";
     } else if (fields["name"] && field === "name") {
-      formIsValid = true;
       errors["name"] = "";
     }
 
     //Email
     if((!fields["email"] || fields["email"] === "") && (field === "email")) {
-      formIsValid = false;
       errors["email"] = "This email is not valid.";
     }
 
-    //Message
-    if((!fields["message"] || fields["message"] === "") && (field === "message")) {
-      formIsValid = false;
-      errors["message"] = "This field is required.";
-    } else if (fields["message"] && field === "message") {
-      formIsValid = true;
-      errors["message"] = "";
+    if (typeof fields["email"] !== "undefined") {
+      let pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+
+      if (!pattern.test(fields["email"])) {
+        errors["email"] = "This email is not valid.";
+      } else {
+        errors["email"] = "";
+      }
     }
 
-    if(typeof fields["email"] !== "undefined") {
-      let lastAtPos = fields["email"].lastIndexOf('@');
-      let lastDotPos = fields["email"].lastIndexOf('.');
-
-      if (!(lastAtPos < lastDotPos && lastAtPos > 0 && fields["email"].indexOf('@@') === -1 && lastDotPos > 2 && (fields["email"].length - lastDotPos) > 2)) {
-        formIsValid = false;
-        errors["email"] = "This email is not valid.";
-      }
+    //Message
+    if ((!fields["message"] || fields["message"] === "") && (field === "message")) {
+      errors["message"] = "This field is required.";
+    } else if (fields["message"] && field === "message") {
+      errors["message"] = "";
     }
 
     this.setState({
@@ -70,24 +67,33 @@ class ContactForm extends Component {
     });
 
     console.log(this.state.errors);
+    if (errors["name"] === "" && errors["email"] === "" && errors["message"] === "") {
+      formIsValid = true;
+    }
+
+    this.setState({
+      formValid: formIsValid
+    });
+
     return formIsValid;
   }
 
-  handleSubmit(e){
-    e.preventDefault();
-    if(this.handleValidation()){
-        console.log('validation successful')
-      }else{
-        console.log('validation failed')
-      }
-}
+  handleSubmit(event) {
+    event.preventDefault();
+    if (this.handleValidation()) {
+      alert('The form is submitted successfully');
+      event.target.reset();
+    } else {
+      alert('The form is is not valid.');
+    }
+  }
 
   render() {
     return ( 
       <div className="contact__container">
         <form 
-          className="contact-form"
-          onSubmit={this.handleSubmit.bind(this)} 
+          className={`contact-form ${this.state.formValid ? 'success' : '' }`}
+          onSubmit={this.handleSubmit} 
           method="POST"
         >
           <div className="contact-form__container">
@@ -125,7 +131,9 @@ class ContactForm extends Component {
               onBlur={this.handleValidation.bind(this, "message")}
               error={this.state.errors["message"]}  
             />
-            <SubmitButton />
+            <SubmitButton 
+              className="submit-button"
+            />
           </div>
         </form>
         <div className="contact-info">
