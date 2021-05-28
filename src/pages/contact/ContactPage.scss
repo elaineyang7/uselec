@@ -1,13 +1,25 @@
 @import '../../sassStyles/variables';
+@import '../../sassStyles/mixins';
 
 .contact-page {
+  width: 100%;
   position: relative;
+  top: $nav-height;
 
-  .page-title {
-    width: 100%;
-    height: 230px;
-    position: relative;
-    top: $nav-height;
-    text-align: center;
+  @include for-laptop {
+    top: 116px;
   }
+}
+
+.contact__container {
+  height: 900px;
+
+  @include for-laptop {
+    height: 1150px;
+  }
+
+  @include for-tablet-landscape {
+    height: 1150px;
+  }
+
 }

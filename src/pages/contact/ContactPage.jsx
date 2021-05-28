@@ -8,9 +8,6 @@ import './ContactPage.scss';
 const ContactPage = () => {
   return (
     <div className="contact-page">
-      <div className="page-title">
-        <h1>Contact</h1>
-      </div>
       <ContactForm />
       <Footer />
     </div>
