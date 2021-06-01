@@ -1,5 +1,8 @@
 import React from 'react';
 
+import { timeline } from '../../data/timeline.json';
+import TimelineEvent from '../../components/timeline-event/TimelineEvent';
+
 import './About.scss';
 
 const About = () => {
@@ -8,7 +11,24 @@ const About = () => {
       <div className="page-title">
         <h1>About Uselec</h1>
       </div>
+      <section className="timeline__section">
+        <div className="timeline__wrapper">
+          <ol>
+            {timeline.map( (event, index) => (
+              <li 
+                key={index}
+                className="timeline" 
+              >
+                <span>{event.time}</span>
+                <p>{event.desc}</p>
+              </li>
+            ))}
+          </ol>
+          
+        </div>
+      </section>
     </div>
+    
     /*<section class="ps-timeline-sec">
       <div class="container">
         <ol class="ps-timeline">

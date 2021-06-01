@@ -1,0 +1,29 @@
+{
+  "timeline": [
+    {
+      "id": "0",
+      "time": "1971",
+      "desc": "Uselec Corporation was founded in 1971 by Neil Dorward. Its sole business was acting as US sales representative for Fine Products Corporation in Taiwan"
+    },
+    {
+      "id": "1",
+      "time": "1976",
+      "desc": "Dorward left the company and Shih Chen became the sole owner of Uselec Corporation"
+    },
+    {
+      "id": "2",
+      "time": "1980",
+      "desc": "Uselec became the U.S. sales representative for another assembly house in Taiwan named Lingsen Precision Industries Ltd. Lingsen provides integrated circuits assembly and testing services for several semiconductor companies in Silicon Valley."
+    },
+    {
+      "id": "3",
+      "time": "1985",
+      "desc": "The business sales representative contract with Fine Products Corporation is terminated."
+    },
+    {
+      "id": "4",
+      "time": "1999",
+      "desc": "Dorward left the company and Shih Chen became the sole owner of Uselec Corporation"
+    }
+  ]
+}

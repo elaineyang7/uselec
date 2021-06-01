@@ -1,14 +1,141 @@
 @import '../../sassStyles/variables';
 
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == "xs" {
+      @media screen and (max-width: 767px) {
+        @content;
+      }
+  }
+  @else if $breakpoint == "sm" {
+      @media (min-width: 768px) and (max-width: 991px) {
+          @content;
+      }
+  }
+  @else if $breakpoint == "md" {
+      @media (min-width: 992px) and (max-width: 1199px) {
+          @content;
+      }
+  }
+  @else if $breakpoint == "lg" {
+      @media screen and (min-width: 1200px) {
+          @content;
+      }
+  }
+}
+
 .about {
   position: relative;
+  top: $nav-height;
 
   .page-title {
     width: 100%;
-    height: 230px;
+    height: 212px;
     position: fixed;
     top: $nav-height;
     text-align: center;
+  }
+
+  .timeline{
+    &__section {
+      width: 100%;
+      position: relative;
+      top: 212px;
+
+      .timeline__wrapper {
+        width: 85%;
+        height: 420px;
+        position: relative;
+        margin: 0 auto;
+        padding-top: 210px;
+  
+        ol {
+          border-top: 1px solid $blue-regular;
+          list-style: none;
+          display: flex;
+          flex-direction: row;
+  
+          .timeline {
+            width: 200px;
+            height: 200px;
+            border-left: 1.5px solid $blue-dark;
+            position: relative;
+            top: 0;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+  
+            &::before {
+              content: '';
+              width: 10px;
+              height: 10px;
+              border-radius: 100%;
+              border: 2px solid $blue-dark;
+              background-color: $white-01;
+              color: $blue-dark;
+              position: absolute;
+              top: -8px;
+              left: -8px;
+              display: block;
+            }
+
+            &::after {
+              content: '';
+              width: 8px;
+              height: 8px;
+              border-radius: 100%;
+              background-color: $blue-dark;
+              color: $blue-dark;
+              position: absolute;
+              top: 195px;
+              left: -5px;
+              display: block;
+            }
+
+            span {
+              font-family: SFProText-Semibold;
+              font-size: 24px;
+              color: $blue-dark;
+              position: relative;
+              top: 163px;
+              left: 15px;
+              margin-top: 20px;
+            }
+
+            p {
+              position: relative;
+              bottom: -50px;
+              left: 15px;
+            }
+
+            &:nth-of-type(2n) {
+              top: -200px;
+
+              &::before {
+                top: 192px;
+              }
+
+              &::after {
+                top: -5px;
+                left: -4px;
+              }
+
+              span {
+                position: relative;
+                top: -18px;
+                margin-top: 0;
+                margin-bottom: 15px;
+              }
+
+              p {
+                bottom: 15px;
+              }
+            }
+
+          }
+        }
+      }
+    }
+
   }
 }
 
