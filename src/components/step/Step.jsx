@@ -14,7 +14,7 @@ const Step = ( {id, step} ) => {
       to={id.toString()}
       spy={true} 
       smooth={true} 
-      duration={1000}
+      duration={100}
       offset={-374}
       key={id}
     >
