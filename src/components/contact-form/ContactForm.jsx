@@ -66,9 +66,10 @@ class ContactForm extends Component {
       errors: errors
     });
 
-    console.log(this.state.errors);
     if (errors["name"] === "" && errors["email"] === "" && errors["message"] === "") {
       formIsValid = true;
+    } else {
+      formIsValid = false;
     }
 
     this.setState({
