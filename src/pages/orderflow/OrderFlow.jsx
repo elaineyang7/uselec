@@ -3,7 +3,6 @@ import { Link } from 'react-scroll';
 
 import { steps } from '../../data/order-flow-details.json';
 import StepSection from '../../components/step-section/StepSection';
-import Step from '../../components/step/Step';
 
 import './OrderFlow.scss';
 
