@@ -3,7 +3,7 @@
 
 .orderflow {
   width: 100%;
-  height: 2800px;
+  height: 2700px;
   position: absolute;
   top: $nav-height;
   background-color: $blue-regular;
@@ -12,19 +12,19 @@
   grid-template-columns: repeat(12,1fr);
 
   @include for-laptop {
-    height: 2850px;
+    height: 2700px;
   }
 
   @include for-small-laptop {
-    height: 2840px;
+    height: 2700px;
   }
 
   @include for-tablet-landscape {
-    height: 3150px;
+    height: 2950px;
   }
 
   @include for-tablet-portrait  {
-    height: 3000px;
+    height: 2820px;
   }
 
 
@@ -162,9 +162,9 @@
   }*/
 
   .flow {
-    height: 1600px;
+    height: 1300px;
     grid-row: 2/-1;
-    grid-column: 7/span 5;
+    grid-column: 6/span 6;
     margin-top: 72px;
 
     @include for-small-laptop {
@@ -172,6 +172,7 @@
     }
 
     @include for-tablet-landscape {
+      height: 550px;
       grid-column: 5/span 4;
     }
 
