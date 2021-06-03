@@ -20,8 +20,11 @@ const HomepageAbout = () => {
         <HashLink 
           to='/about'
           scroll={el => scrollWithOffset(el)}
+          className="link"
         >
-          <div className="learn-more">Learn More</div>
+          <div className="learn-more">
+            <p>Learn More</p>
+          </div>
         </HashLink>
       </div>
       

@@ -37,32 +37,31 @@
 
     .learn-more {
       width: 150px;
-      height: 54px;
+      height: 59px;
       position: relative;
-      top: 48px;
-      font-family: "SFProText-regular";
-      font-size: 18px;
-      color: $white-01;
+      top: 0;
       background-color: $blue-dark;
       margin: 0 auto;
+      margin-top: 48px;
       padding: 16px;
       border-style: none;
       border-radius: 5px;
       letter-spacing: 1px;
+      text-align: center;
+      transition: 0.3s;
 
-      /*.about-btn {
-        width: 130px;
-        height: 54px;
+      &:hover {
+        background-color: #2d5091;
+        box-sizing: border-box;
+        box-shadow: 3px 5px 20px rgba(27, 96, 182, 0.4);
+        transform: translateY(-5px);
+        transition: 0.3s;
+      }
+
+      p {
+        font-family: "SFProText-regular";
         font-size: 18px;
         color: $white-01;
-        background-color: $blue-dark;
-        padding: 16px;
-        border-style: none;
-        border-radius: 5px;
-      }*/
-
-      &::hover {
-        background-color: $blue-regular;
       }
     }
   }

@@ -16,7 +16,7 @@
 
     span {
       font-size: 40px;
-      font-family: SFProText-Regular;
+      font-family: "SFProText-Regular";
       position: relative;
       top: 100px;
       left: 12%;
@@ -43,7 +43,7 @@
       }
     }
 
-    .intro {
+    .introduction {
       width: 400px;
       position: relative;
       top: 66px;
@@ -53,6 +53,10 @@
 
       @include for-tablet-landscape {
         left: 80px;
+      }
+
+      p {
+        text-align: start;
       }
     }
 
@@ -197,7 +201,7 @@
             }
 
             span {
-              font-family: SFProText-Semibold;
+              font-family: "SFProText-Semibold";
               font-size: 24px;
               color: $blue-dark;
               position: relative;

@@ -28,7 +28,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(24, 23, 23, 0.6);
+    background-color: rgba(17, 17, 17, 0.4);
 
     @include for-tablet-landscape {
       height: 500px;
@@ -93,14 +93,21 @@
   .arrow {
     width: 100%;
     position: absolute;
-    top: calc(#{$nav-height} + 750px);
+    top: calc(#{$nav-height} + 730px);
     left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 
     @include for-tablet-landscape {
-      top: calc(#{$nav-height} + 350px);
+      top: calc(#{$nav-height} + 330px);
+    }
+
+    p {
+      position: absolute;
+      top: 50px;
+      font-weight: 100;
+      color: $white-01;
     }
 
     &__container {

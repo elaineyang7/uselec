@@ -27,12 +27,12 @@ const Banner = () => {
         to='/#about'
         scroll={el => scrollWithOffset(el)}
       >
-      <div className="arrow">
-        
+        <div className="arrow">
+          <p>more</p>
           <div className="arrow__container">
             <div className="line"></div>
           </div>
-      </div>
+        </div>
       </HashLink>
     </div>
   );

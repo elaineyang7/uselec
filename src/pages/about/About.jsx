@@ -12,7 +12,7 @@ const About = () => {
       <div className="intro__container">
         <span>About</span>
         <h1>Uselec Corporation</h1>
-        <div className="intro">
+        <div className="introduction">
           <p>1971年 Uselec 在美國加州成立一個可靠的進出口代理商。
           起初為美國半導體公司代理台灣半導體工廠做 IC 加工，
           後為廣大的半導體製造商客戶提供相關電子零件、機器零件採購之即時支援服務。</p>
