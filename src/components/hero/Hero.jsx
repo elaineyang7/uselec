@@ -1,21 +1,34 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 import './Hero.scss';
 import banner from '../../assets/banner.jpg';
 
 const Hero = () => {
+  const scrollWithOffset = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -374; 
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
+  }
+  
   return (
     <section className="banner">
       <img src={banner} alt="uselec with Taiwan" />
       <div className="img-mask"></div>
       <div className="value">
         <p>Professional Service</p>
-        <span>回復迅速</span>
-        <span>快速供貨</span>
+        <span>回覆迅速/採購流程簡易</span>
+        <span>快速供貨/根據需求時間出貨</span>
         <span>提供專業採購服務</span>
+        
       </div>
-      <div className="about">
+      
+      <div class="arrow">
+        <div class="arrow__container">
+          <div class="line"></div>
+        </div>
+      </div>
+      <div className="about" id="about">
         <h1>Uselec</h1>
         <div className="intro">
           <p>1971年 Uselec Inc. 在美國加州成立一個可靠的進出口代理商。

@@ -1,0 +1,69 @@
+@import '../../sassStyles/variables';
+@import '../../sassStyles//mixins';
+
+.about {
+  width: 1280px;
+  min-height: 380px;
+  position: relative;
+  text-align: center;
+
+  @include for-tablet-landscape {
+    width: 80%;
+    min-height: 350px;
+    margin: 0 auto;
+  }
+
+  @include for-tablet-portrait {
+    min-height: 500px;
+  }
+
+  h1 {
+    font-size: 64px;
+  }
+
+  .intro {
+    width: 590px;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 96px;
+
+    @include for-tablet-landscape {
+      width: 430px;
+    }
+
+    @include for-phone {
+      width: 350px;
+    }
+
+    .learn-more {
+      width: 150px;
+      height: 54px;
+      position: relative;
+      top: 48px;
+      font-family: "SFProText-regular";
+      font-size: 18px;
+      color: $white-01;
+      background-color: $blue-dark;
+      margin: 0 auto;
+      padding: 16px;
+      border-style: none;
+      border-radius: 5px;
+      letter-spacing: 1px;
+
+      /*.about-btn {
+        width: 130px;
+        height: 54px;
+        font-size: 18px;
+        color: $white-01;
+        background-color: $blue-dark;
+        padding: 16px;
+        border-style: none;
+        border-radius: 5px;
+      }*/
+
+      &::hover {
+        background-color: $blue-regular;
+      }
+    }
+  }
+}

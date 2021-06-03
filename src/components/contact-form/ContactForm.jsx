@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
 import { informations } from '../../data/contact-info.json';
-import Input from '../common/input/Input';
-import TextArea from '../common/textarea/TextArea';
-import SubmitButton from '../common/submit-button/SubmitButton';
+import Input from '../input/Input';
+import TextArea from '../textarea/TextArea';
+import SubmitButton from '../submit-button/SubmitButton';
 import Info from '../info/Info';
 
 import './ContactForm.scss';

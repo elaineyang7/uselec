@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
+import ScrollToTop from './utils/scrollToTop';
 import Header from './components/header/Header';
 import HomePage from './pages/homepage/HomePage';
 import About from './pages/about/About';
@@ -13,7 +14,7 @@ class App extends Component {
   render(){
     return(
       <div>
-        <BrowserRouter>
+        <ScrollToTop>
           <Header />
           <Switch>
             <Route exact path="/" component={HomePage} />
@@ -21,7 +22,7 @@ class App extends Component {
             <Route exact path="/orderflow" component={OrderFlow} />
             <Route exact path="/contact" component={ContactPage} />
           </Switch>
-        </BrowserRouter>
+        </ScrollToTop>
       </div>
     );
   }

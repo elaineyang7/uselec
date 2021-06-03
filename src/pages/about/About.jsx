@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import { timeline } from '../../data/timeline.json';
 import SvgIcon from '../../components/common/svg-icon/SvgIcon';

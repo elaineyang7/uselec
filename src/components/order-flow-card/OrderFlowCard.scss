@@ -10,7 +10,7 @@
   margin: 0 20px;
   border-radius: 15px;
   background-color: rgb(244, 249, 255);
-  transition: 0.5s ease-in;
+  transition: 0.3s ease-in;
 
   span {
     position: absolute;
@@ -59,7 +59,7 @@
   &:hover {
     background-color: #8aafd27a;
     transform: translateY(-24px);
-    transition: 0.5s ease-in;
+    transition: 0.3s ease-in;
   }
 }
 

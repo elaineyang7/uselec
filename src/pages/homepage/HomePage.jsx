@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Banner from '../../components/banner/Banner';
+import HomepageAbout from '../../components/homepage-about/HomepageAbout';
 import Hero from '../../components/hero/Hero';
 import HomepageOrderFlow from '../../components/homepage-order-flow/HomepageOrderFlow';
 import Benefits from '../../components/benefits/Benefits';
@@ -11,7 +13,8 @@ import './HomePage.scss';
 const HomePage = () => {
   return (
     <div className="homepage">
-      <Hero />
+      <Banner />
+      <HomepageAbout />
       <HomepageOrderFlow />
       <Benefits />
       <Contact />

@@ -1,5 +1,5 @@
-@import '../../../sassStyles/variables';
-@import '../../../sassStyles/mixins';
+@import '../../sassStyles/variables';
+@import '../../sassStyles/mixins';
 
 .input-box {
   width: 100%;
@@ -8,12 +8,8 @@
   flex-direction: column;
 
   label {
-    position: relative;
     font-size: 20px;
     margin-bottom: 8.5px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 
     @include for-tablet-portrait {
       font-size: 16px;
@@ -28,9 +24,9 @@
     }
   }
 
-  input {
+  textarea {
     width: 636px;
-    height: 60px;
+    height: 185px;
     border: 1px solid $blue-regular;
     box-sizing: border-box;
     border-radius: 5px;
@@ -41,10 +37,6 @@
 
     @include for-tablet-landscape {
       width: 400px;
-    }
-
-    @include for-tablet-portrait {
-      height: 48px;
     }
 
     @include for-phone {
@@ -61,7 +53,6 @@
         font-size: 14px;
       }
     }
-    
   }
  
 }
@@ -70,10 +61,10 @@
   visibility: visible;
 }
 
-.error-input input {
+.error-input textarea {
   border: 1px solid $red-error;
 }
 
-.success-input input {
+.success-input textarea {
   background-color: $blue-light;
 }
