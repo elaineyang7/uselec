@@ -13,3 +13,15 @@
 @mixin for-laptop {
   @media (max-width: 1300px) { @content; }
 }
+
+@mixin boxShaddow {
+  box-sizing: border-box;
+  box-shadow: 3px 5px 20px rgba(27, 96, 182, 0.4);
+}
+
+@mixin buttonHover {
+  background-color: #2D5091;
+  transform: translateY(-5px);
+  transition: 0.3s;
+  @include boxShaddow;
+}

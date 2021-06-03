@@ -29,9 +29,5 @@ button {
 }
 
 .contact-form.success .contact-form__container .submit-button:hover {
-  background-color: #2d5091;
-  box-sizing: border-box;
-  box-shadow: 3px 5px 20px rgba(27, 96, 182, 0.4);
-  transform: translateY(-5px);
-  transition: 0.3s;
+  @include buttonHover;
 }

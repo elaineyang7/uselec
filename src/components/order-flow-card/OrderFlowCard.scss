@@ -1,4 +1,5 @@
 @import '../../sassStyles/variables';
+@import '../../sassStyles/mixins';
 
 .card {
   width: 280px;
@@ -11,6 +12,21 @@
   border-radius: 15px;
   background-color: rgb(244, 249, 255);
   transition: 0.3s ease-in;
+
+  @include for-laptop {
+    width: 230px;
+    margin: 0 9px;
+  }
+
+  @include for-tablet-landscape {
+    min-width: 280px;
+    margin: 0 32px 32px 32px;
+  }
+
+  @include for-tablet-portrait {
+    min-width: 350px;
+    margin: 0;
+  }
 
   span {
     position: absolute;
@@ -57,29 +73,10 @@
   }
 
   &:hover {
-    background-color: #8aafd27a;
+    background-color: #88adcf7a;
     transform: translateY(-24px);
     transition: 0.3s ease-in;
-  }
-}
-
-@media (max-width: 1300px) {
-  .card {
-    width: 230px;
-    margin: 0 9px;
-  }
-}
-
-@media (max-width: 996px) {
-  .card {
-    min-width: 280px;
-    margin: 0 32px 32px 32px;
-  }
-}
-
-@media (max-width: 768px) {
-  .card {
-    min-width: 350px;
-    margin: 0;
+    box-sizing: border-box;
+    box-shadow: 3px 5px 15px rgba(20, 79, 150, 0.4);
   }
 }
