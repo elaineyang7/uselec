@@ -1,6 +1,6 @@
-@import '../../../sassStyles/variables';
+@import '../../sassStyles/variables';
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap');
-@import '../../../sassStyles//mixins';
+@import '../../sassStyles//mixins';
 
 .title {
   position: relative;
@@ -12,7 +12,7 @@
     left: 0;
     font-family: 'DM Serif Display', serif;
     font-size: 150px;
-    color: $white-01;
+    color: $blue-dark;
     opacity: 0.2;
 
     @include for-tablet-portrait  {
@@ -23,7 +23,7 @@
 
   h3 {
     width: 350px;
-    color: #1F3968;
+    color: $blue-dark;
     position: relative;
     top: 50px;
     left: 200px;

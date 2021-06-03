@@ -9,7 +9,7 @@ import './HomepageOrderFlow.scss';
 const HomepageOrderFlow = () => {
   const scrollWithOffset = (el) => {
     const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-    const yOffset = -374; 
+    const yOffset = -130; 
     window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
   }
 
