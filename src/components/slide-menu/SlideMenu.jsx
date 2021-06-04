@@ -5,7 +5,8 @@ import styled from "styled-components";
 import './SlideMenu.scss';
 
 const StyledMenu = styled.nav`
-  transform: ${({ open }) => open ? 'translateY(0)' : 'translateY(-200%)'};
+  //transform: ${({ open }) => open ? 'translateY(0)' : 'translateY(-100%)'};
+  opacity: ${({ open }) => open ? '1' : '0'};
 `
 
 const SlideMenu = ({ open, setOpen }) => {
@@ -15,7 +16,7 @@ const SlideMenu = ({ open, setOpen }) => {
       open={open}
     >
       <ul className="menu__links">
-        <li className="menu__link line">
+        <li className="menu__link">
           <Link 
             className='option' 
             to='/about'
@@ -25,7 +26,7 @@ const SlideMenu = ({ open, setOpen }) => {
             About
           </Link>
         </li>
-        <li className="menu__link line">
+        <li className="menu__link">
           <Link 
             className='option' 
             to='/orderflow'

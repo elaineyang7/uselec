@@ -1,19 +1,16 @@
 @import '../../sassStyles/variables';
-
-nav {
-  z-index: -20;
-}
+@import '../../sassStyles/mixins';
 
 .slide-menu {
   width: 100vw;
-  height: 180px;
+  height: 250px;
   position: absolute;
   top: $nav-height;
   left: 0;
-  background-color: $blue-light;
+  background-color: $blue-regular;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
-  z-index: -50;
+  @include boxShaddow;
   
   .menu {
     width: 100%;
@@ -23,11 +20,14 @@ nav {
       display: flex;
       flex-direction: column;
       justify-content: start;
+      align-content: center;
     }
 
     &__link {
       width: 90%;
       height: 50px;
+      font-size: 20px;
+      padding: 32px;
       margin: 0 auto;
       display: flex;
       flex-direction: column;

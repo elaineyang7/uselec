@@ -14,7 +14,7 @@ const Header = () => {
     <header>
       <div className="header__container">
         <Link 
-          className='option' 
+          className='uselec' 
           to='/'
         >
           <h3>Uselec</h3>

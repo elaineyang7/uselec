@@ -31,16 +31,7 @@
     }
 
     h1 {
-      font-size: 32px;
-      color: #325BA6;
-      text-align: start;
-      position: relative;
-      top: 80px;
-      padding-left: 12%;
-
-      @include for-tablet-landscape {
-        padding-left: 80px;
-      }
+      @include pageTitle;
     }
 
     .introduction {
@@ -208,6 +199,7 @@
               top: 25px;
               left: -9px;
               margin-top: 20px;
+              text-align: start;
 
               @include for-tablet-landscape {
                 top: -65px;
@@ -236,6 +228,7 @@
               position: relative;
               top: 40px;
               left: -9px;
+              text-align: start;
 
               @include for-tablet-landscape {
                 top: -50px;

@@ -9,6 +9,7 @@ import OrderFlow from './pages/orderflow/OrderFlow';
 import ContactPage from './pages/contact/ContactPage';
 
 import './index.css';
+import './styles.scss';
 
 class App extends Component {
   render(){

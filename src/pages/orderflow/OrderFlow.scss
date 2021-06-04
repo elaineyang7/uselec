@@ -5,6 +5,7 @@
   width: 100%;
   position: relative;
   top: $nav-height;
+  margin: 0;
 
   .intro__container {
     width: 100%;
@@ -31,20 +32,11 @@
     }
 
     h1 {
-      font-size: 32px;
-      color: #325BA6;
-      text-align: start;
-      position: relative;
-      top: 80px;
-      padding-left: 12%;
-
-      @include for-tablet-landscape {
-        padding-left: 80px;
-      }
+      @include pageTitle;
     }
 
     .introduction {
-      width: 400px;
+      width: 300px;
       position: relative;
       top: 66px;
       left: 12%;
@@ -61,13 +53,13 @@
     }
 
     .icon {
-      width: 60%;
-      height: 60%;
+      width: 50%;
+      height: 50%;
       position: absolute;
       top: 230px;
       right: -10%;
       opacity: 50%;
-      transform: rotate(30deg);
+      transform: rotate(-10deg);
       overflow: hidden;
 
       @include for-tablet-portrait {
@@ -143,7 +135,7 @@
 
         ul {
           position: relative;
-          left: 48px;
+          left: 40px;
 
           li {
             position: relative;
@@ -162,13 +154,12 @@
               display: block;
               position: relative;
               top: 10px;
-              left: -27px;
+              left: -19px;
               border-radius: 50%;
               background-color: $blue-dark;
             }
 
             .step {
-
               @include for-tablet-portrait  {
                 font-size: 12px;
               }
@@ -195,8 +186,6 @@
               transform: rotateY(0deg);
             }
           }
-
-        
         }
       }
     }
@@ -213,8 +202,8 @@
     }*/
 
     .flow {
-      height: 1300px;
-      grid-column: 6/span 6;
+      height: 1200px;
+      grid-column: 6/span 5;
 
       @include for-small-laptop {
         grid-column: 5/span 6;
@@ -222,11 +211,11 @@
 
       @include for-tablet-landscape {
         height: 550px;
-        grid-column: 5/span 4;
+        grid-column: 5/span 7;
       }
 
       @include for-tablet-portrait  {
-        grid-column: 6/span 7;
+        grid-column: 6/span 6;
       }
     }
   }

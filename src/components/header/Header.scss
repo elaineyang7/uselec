@@ -6,7 +6,7 @@ header {
   height: $nav-height;
   position: fixed;
   top: 0;
-  background: #FDFDFD;
+  background: $white-02;
   box-shadow: 0px 1px 20px rgba(55, 95, 170, 0.25);
   border-radius: 2px;
   z-index: 10;
@@ -23,11 +23,21 @@ header {
   grid-template-columns: 2fr 1fr;
   z-index: 20;
 
-  .option {
+  @include for-tablet-landscape {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .uselec {
+    width: 120px;
+    position: fixed;
+    top: 16px;
+    left: 100px;
+
+    @include for-tablet-portrait {
+      left: 50px;
+    }
+
     h3 {
-      position: fixed;
-      top: 16px;
-      left: 100px;
       grid-column-start: 1;
       grid-column-end: 2;
       margin: 0;
@@ -42,6 +52,10 @@ header {
 
 .menuBtn { 
   display: none;
+
+  @include for-tablet-portrait {
+    display: inline;
+  }
 }
 
 .menu {
@@ -50,6 +64,10 @@ header {
   grid-column-end: 3;
   padding-right: 32px;
 
+  @include for-tablet-portrait {
+    display: none;
+  }
+
   &__links {
     position: relative;
     top: 50%;
@@ -57,37 +75,21 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    @include for-tablet-portrait {
+      display: none;
+    }
   }
 
   &__link {
     font-size: 16px;
 
+    @include for-tablet-landscape {
+      padding-left: 32px;
+    }
+
     .option:hover {
       color: $blue-dark;
     }
-  }
-}
-
-@media (max-width: 992px) {
-  .header__container {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .menu__link {
-    padding-left: 32px;
-  }
-}
-
-@media (max-width: 768px) {
-  .menu {
-    display: none;
-  }
-
-  .menuBtn { 
-    display: inline;
-  }
-
-  .menu__links {
-    display: none;
   }
 }

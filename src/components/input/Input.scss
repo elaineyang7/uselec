@@ -37,7 +37,7 @@
     padding: 20px 16px;
     margin-bottom: 24px;
     font-size: 18px;
-    font-family: SFProText-Thin;
+    font-family: "SFProText-Thin";
 
     @include for-tablet-landscape {
       width: 400px;
@@ -54,7 +54,7 @@
 
     &::placeholder {
       font-size: 18px;
-      font-family: SFProText-Thin;
+      font-family: "SFProText-Thin";
       color: $blue-regular;
 
       @include for-tablet-portrait {

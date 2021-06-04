@@ -25,3 +25,16 @@
   transition: 0.3s;
   @include boxShaddow;
 }
+
+@mixin pageTitle {
+  font-size: 32px;
+  color: #325BA6;
+  text-align: start;
+  position: relative;
+  top: 80px;
+  padding-left: 12%;
+
+  @include for-tablet-landscape {
+    padding-left: 80px;
+  }
+}
