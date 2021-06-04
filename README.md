@@ -1,5 +1,7 @@
 # Uselec Corporation
-Russell Leong Design is a design office based in the Bay Area that produces appropriate and meaningful brand identity graphics for a multitude of clients, small and large: high tech, and soft tech.
+Uselec Corporation was founded in 1971. Its sole business was acting as US sales representative for Fine Products Corporation in Taiwan. Fine Products Corp. is the first transistors manufacturer in Taiwan and also a subcontract  assembly house for U.S. semiconductor companies.
+In 1980, Uselec became the U.S. sales representative for another assembly house in Taiwan named Lingsen Precision Industries Ltd. Lingsen provides integrated circuits assembly and testing services for several semiconductor companies in Silicon Valley.
+Since then, Uselec changed its business model to serve as a purchasing agent for several electronic and semiconductor manufacturers in Taiwan.  As of today, Uselec has been offering the electronic products and materials sourced in the U.S. and shipped to Taiwan according to customers’ requirements.
 
 ## Technologies
 Project is created with:
