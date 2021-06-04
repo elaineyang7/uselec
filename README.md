@@ -1,3 +1,14 @@
+# Uselec Corporation
+Russell Leong Design is a design office based in the Bay Area that produces appropriate and meaningful brand identity graphics for a multitude of clients, small and large: high tech, and soft tech.
+
+## Technologies
+Project is created with:
+* React
+* SASS
+* BEM naming
+* Webpack
+* Babel
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
