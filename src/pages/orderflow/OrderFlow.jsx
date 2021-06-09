@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-scroll';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import { steps } from '../../data/order-flow-details.json';
 import SvgIcon from '../../components/svg-icon/SvgIcon';
@@ -19,6 +21,10 @@ class OrderFlow extends Component {
   }
 
   componentDidMount() {
+    AOS.init({
+      duration : 2000
+    });
+
     document.addEventListener('scroll', () => {
       const scrollY = window.scrollY;
       
@@ -48,8 +54,19 @@ class OrderFlow extends Component {
         <section className="orderflow">
           <div className="intro__container">
             <span>Order Flow</span>
-            <h1>採購流程</h1>
-            <div className="introduction">
+            <h1
+              data-aos="fade-right"
+              data-aos-duration="1000" 
+              data-aos-once="true"
+            >
+              採購流程
+            </h1>
+            <div 
+              className="introduction"
+              data-aos="fade-right"
+              data-aos-duration="1000" 
+              data-aos-once="true"
+            >
               <p>回覆迅速/採購流程簡易</p>
               <p>快速供貨/根據需求時間出貨</p>
               <p>提供專業採購服務</p>

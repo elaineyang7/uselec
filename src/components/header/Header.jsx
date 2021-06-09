@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import MenuButton from '../common/menu-button/MenuButton.jsx';
+import MenuButton from '../menu-button/MenuButton.jsx';
 import SlideMenu from '../slide-menu/SlideMenu';
 
 import './Header.scss';
