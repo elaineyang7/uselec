@@ -10,6 +10,8 @@ Project is created with:
 * BEM naming
 * Webpack
 * Babel
+* Styled Components
+* AOS
 
 # Getting Started with Create React App
 
