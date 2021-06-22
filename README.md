@@ -14,6 +14,7 @@ Project is created with:
 * AOS
 
 ## Folder Structure
+```
 uselec
   ├── dist
   │   └── index.html
