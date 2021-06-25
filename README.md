@@ -10,6 +10,80 @@ Project is created with:
 * BEM naming
 * Webpack
 * Babel
+* Styled Components
+* AOS
+
+## Folder Structure
+```
+uselec
+  ├── dist
+  │   └── index.html
+  │
+  ├── public
+  │   ├── images
+  │   ├── favicon.ico
+  │   └── index.html
+  │
+  ├── src
+  │   ├── assets
+  │   ├── components
+  │   │   ├── banner
+  │   │   ├── benefit
+  │   │   ├── benefits
+  │   │   ├── contact-form
+  │   │   ├── contact
+  │   │   ├── footer
+  │   │   ├── header
+  │   │   ├── homepage-about
+  │   │   ├── homepage-order-flow
+  │   │   ├── info
+  │   │   ├── input
+  │   │   ├── menu-button
+  │   │   ├── order-flow-card
+  │   │   ├── slide-menu
+  │   │   ├── step-description
+  │   │   ├── step-section
+  │   │   ├── step-title
+  │   │   ├── submit-button
+  │   │   ├── svg-icon
+  │   │   └── textarea
+  │   │ 
+  │   ├── data
+  │   │   ├── benefits.json
+  │   │   ├── contact-info.json
+  │   │   ├── order-flow-details.json
+  │   │   ├── order-flow.json
+  │   │   └── timeline.json
+  │   │
+  │   ├── fonts
+  │   │
+  │   ├── pages
+  │   │   ├── about
+  │   │   ├── contact
+  │   │   ├── homepage
+  │   │   └── orderflow
+  │   │
+  │   ├── sassStyles
+  │   │   ├── _global.scss
+  │   │   ├── _mixins.scss
+  │   │   ├── _typography.scss
+  │   │   └── _variables.scss
+  │   │
+  │   ├── utils 
+  │   │   └── scrollToTop.jsx
+  │   │
+  │   ├── App.css
+  │   ├── App.js
+  │   ├── index.css
+  │   ├── index.js
+  │   ├── logo.svg
+  │   ├── main.jsx
+  │   └── styles.scss
+  │
+  ├── .babelrc
+  ├── package.json
+  ├── webpack.config.js
+  └── README.md
 
 # Getting Started with Create React App
 
