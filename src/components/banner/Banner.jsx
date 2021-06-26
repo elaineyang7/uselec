@@ -3,6 +3,7 @@ import { HashLink } from 'react-router-hash-link';
 
 import './Banner.scss';
 import banner from '../../assets/banner.jpg';
+import taipei from '../../assets/101.jpg';
 
 const Banner = () => {
   const scrollWithOffset = (el) => {
@@ -13,7 +14,7 @@ const Banner = () => {
 
   return (
     <div className="banner">
-      <img src={banner} alt="uselec with Taiwan" />
+      <img src={taipei} alt="uselec with Taiwan" />
       <div className="img-mask"></div>
       <div className="value">
         <p>Professional Service</p>
