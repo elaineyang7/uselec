@@ -60,7 +60,6 @@ module.exports = {
               loader: 'svg-url-loader'
           }
         },
-  
         {
           test: /\.svg$/,
           use: [
@@ -82,7 +81,8 @@ module.exports = {
    
    plugins:[
        new HtmlWebpackPlugin({
-            template: './dist/index.html'
+            template: './dist/index.html',
+            favicon: 'public/u.ico'
        }), 
    ],
    resolve: {
