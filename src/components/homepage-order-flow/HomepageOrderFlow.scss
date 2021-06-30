@@ -12,7 +12,7 @@
   }
 
   @include for-tablet-portrait {
-    height: 2274px;
+    height: 2174px;
   }
 
   h2 {
@@ -39,8 +39,8 @@
     }
 
     @include for-tablet-portrait {
-      width: 350px;
-      min-width: 350px;
+      width: 300px;
+      min-width: 300px;
       height: 1320px;
     }
   }

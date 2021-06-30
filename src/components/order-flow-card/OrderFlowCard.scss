@@ -24,7 +24,7 @@
   }
 
   @include for-tablet-portrait {
-    min-width: 350px;
+    min-width: 300px;
     margin: 0;
   }
 
@@ -52,6 +52,11 @@
     margin: 0 auto;
     margin-top: 80px;
     margin-bottom: 48px;
+
+    @include for-tablet-portrait {
+      width: 100px;
+      height: 100px;
+    }
 
     img {
       width: 100%;
