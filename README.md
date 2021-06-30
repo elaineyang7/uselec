@@ -12,6 +12,8 @@ Project is created with:
 * Babel
 * Styled Components
 * AOS
+* Google Map Reac
+* Iconify
 
 ## Folder Structure
 ```
@@ -38,6 +40,7 @@ uselec
   │   │   ├── homepage-order-flow
   │   │   ├── info
   │   │   ├── input
+  │   │   ├── map
   │   │   ├── menu-button
   │   │   ├── order-flow-card
   │   │   ├── slide-menu
