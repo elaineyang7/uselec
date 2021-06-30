@@ -3,11 +3,12 @@
 
 .contact {
   width: 100%;
-  height: 956px;
+  //height: 956px;
+  height: 1456px;
   position: relative;
   margin: 0;
 
   @include for-laptop {
-    height: 1206px;
+    height: 1706px;
   }
 }
