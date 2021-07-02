@@ -18,9 +18,9 @@ const Banner = () => {
       <div className="img-mask"></div>
       <div className="value">
         <p>Professional Service</p>
+        <span>提供專業採購服務</span>
         <span>回覆迅速/採購流程簡易</span>
         <span>快速供貨/根據需求時間出貨</span>
-        <span>提供專業採購服務</span>
         
       </div>
       <HashLink 

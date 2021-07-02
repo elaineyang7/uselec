@@ -67,9 +67,9 @@ class OrderFlow extends Component {
               data-aos-duration="1000" 
               data-aos-once="true"
             >
+              <p>提供專業採購服務</p>  
               <p>回覆迅速/採購流程簡易</p>
               <p>快速供貨/根據需求時間出貨</p>
-              <p>提供專業採購服務</p>
             </div>
             <div className="icon">
               <SvgIcon 
@@ -112,7 +112,7 @@ class OrderFlow extends Component {
                       duration={1000}
                       offset={-130}
                     >
-                      02 &nbsp; Contract
+                      02 &nbsp; Purchase Order
                     </Link>
                   </li>
                   <li>

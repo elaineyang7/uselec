@@ -4,13 +4,13 @@
       "id": "0",
       "icon": "request.svg",
       "title": "Request",
-      "desc": "寫信詢問所需電子零件及報價"
+      "desc": "寫email詢問所需電子零件及報價"
     },
     {
       "id": "1",
       "icon": "contract.svg",
-      "title": "Contract",
-      "desc": "確認採購訂單，明確商品、價格、運送費用"
+      "title": "Purchase Order",
+      "desc": "確認採購訂單，明確商品、價格、交貨日期"
     },
     {
       "id": "2",
