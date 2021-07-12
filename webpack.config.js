@@ -9,7 +9,8 @@ module.exports = {
       publicPath: '/'
    },
    devServer: {
-      port: 8080,
+      //port: 8080,
+      contentBase: "./build",
       historyApiFallback: true
    },
    performance: {
@@ -86,8 +87,8 @@ module.exports = {
    
    plugins:[
        new HtmlWebpackPlugin({
-            template: './build/index.html',
-            favicon: 'public/u.ico'
+          template: './build/index.html',
+          favicon: 'public/u.ico'
        }), 
    ],
    resolve: {
