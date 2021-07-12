@@ -12,6 +12,11 @@ module.exports = {
       port: 8080,
       historyApiFallback: true
    },
+   performance: {
+    hints: false,
+    maxEntrypointSize: 4096000,
+    maxAssetSize: 4096000
+  },
    module: {
       rules: [
         {
