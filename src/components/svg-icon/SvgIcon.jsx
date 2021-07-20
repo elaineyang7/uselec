@@ -2,7 +2,7 @@ import React from 'react';
 
 const SvgIcon = ({ src, alt }) => (
   <img 
-    src={`/public/images/svg/${src}`} 
+    src={`./assets/svg/${src}`} 
     alt={alt} 
   />
 );

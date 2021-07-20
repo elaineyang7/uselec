@@ -1,5 +1,8 @@
 import React from 'react';
+import { Switch, Route } from "react-router-dom";
 
+import Header from '../../components/header/Header';
+import ScrollToTop from '../../utils/scrollToTop';
 import ContactForm from '../../components/contact-form/ContactForm';
 import Map from '../../components/map/Map';
 import Footer from '../../components/footer/Footer';
@@ -13,6 +16,13 @@ const location = {
 
 const ContactPage = () => {
   return (
+    <div>
+        <ScrollToTop>
+          <Header />
+          <Switch>
+            <Route path="/contact" component={ContactPage} />
+          </Switch>
+
     <div className="contact-page">
       <ContactForm />
       <Map
@@ -21,6 +31,8 @@ const ContactPage = () => {
         text='Uselec Corp.'
       />
       <Footer />
+    </div>
+    </ScrollToTop>
     </div>
   );
 }

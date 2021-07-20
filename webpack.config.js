@@ -2,11 +2,16 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-   entry: './src/index.js',
+   entry: {
+      index: './src/index.js',
+      about: './src/about.js',
+      orderflow: './src/orderflow.js',
+      contact: './src/contact.js'
+   },
    output: {
       path: path.join(__dirname, '/build'),
-      filename: 'bundle.js',
-      publicPath: '/'
+      filename: '[name]-bundle.js',
+      publicPath: './'
    },
    devServer: {
       //port: 8080,
@@ -86,10 +91,36 @@ module.exports = {
    },
    
    plugins:[
-       new HtmlWebpackPlugin({
-          template: './build/index.html',
-          favicon: 'public/u.ico'
-       }), 
+    new HtmlWebpackPlugin(
+      {
+        filename:"index.html",
+        template: "./build/template.html",
+        chunks: ['index'],
+        favicon: './build/u.ico'
+      }
+    ),
+    new HtmlWebpackPlugin(
+      {
+        filename:"about.html",
+        template: "./build/template.html",
+        chunks: ['about'],
+        favicon: './build/u.ico'
+    }),
+    new HtmlWebpackPlugin(
+      {
+        filename:"orderflow.html",
+        template: "./build/template.html",
+        chunks: ['orderflow'],
+        favicon: './build/u.ico'
+      }
+    ),
+    new HtmlWebpackPlugin(
+      {
+        filename:"contact.html",
+        template: "./build/template.html",
+        chunks: ['contact'],
+        favicon: './build/u.ico'
+    })
    ],
    resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.scss'],

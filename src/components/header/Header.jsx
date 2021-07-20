@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { HashRouter, Link } from 'react-router-dom';
 
 import MenuButton from '../menu-button/MenuButton.jsx';
 import SlideMenu from '../slide-menu/SlideMenu';
@@ -13,10 +13,15 @@ const Header = () => {
   return (
     <header>
       <div className="header__container">
+      <HashRouter>
         <Link 
           className='uselec' 
-          to='/'
+          to={{
+            pathname: './index.html',
+            state: {fromDashboard: true }
+          }}
         >
+        
           <h3>Uselec</h3>
         </Link>
         <div 
@@ -29,7 +34,13 @@ const Header = () => {
         <div className="menu">
           <ul className="menu__links">
             <li className="menu__link">
-              <Link className='option' to='/about'>
+              <Link 
+                className='option' 
+                to={{
+                  pathname: './abaout.html',
+                  state: {fromDashboard: true }
+                }}
+              >
                 About
               </Link>
             </li>
@@ -45,6 +56,7 @@ const Header = () => {
             </li>
           </ul>
         </div>
+        </HashRouter>
       </div>
     </header>
   );

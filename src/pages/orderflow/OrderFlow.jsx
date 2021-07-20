@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import { Switch, Route } from "react-router-dom";
 import { Link } from 'react-scroll';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import { steps } from '../../data/order-flow-details.json';
+import Header from '../../components/header/Header';
+import ScrollToTop from '../../utils/scrollToTop';
 import SvgIcon from '../../components/svg-icon/SvgIcon';
 import StepSection from '../../components/step-section/StepSection';
 import Footer from '../../components/footer/Footer';
@@ -51,6 +54,11 @@ class OrderFlow extends Component {
   render() {
     return (
       <div>
+      <ScrollToTop>
+          <Header />
+          <Switch>
+            <Route path="/orderflow" component={OrderFlow} />
+          </Switch>
         <section className="orderflow">
           <div className="intro__container">
             <span>Order Flow</span>
@@ -153,6 +161,7 @@ class OrderFlow extends Component {
             </div>
           </div>
         </section>
+        </ScrollToTop>
         <Footer />
       </div>
     );

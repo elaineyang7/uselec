@@ -1,12 +1,16 @@
 import React, {useEffect} from 'react';
+import { Switch, Route } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import { timeline } from '../../data/timeline.json';
+import Header from '../../components/header/Header';
+import ScrollToTop from '../../utils/scrollToTop';
 import SvgIcon from '../../components/svg-icon/SvgIcon';
 import Footer from '../../components/footer/Footer';
 
 import './About.scss';
+
 
 const About = () => {
   useEffect(() => {
@@ -15,6 +19,13 @@ const About = () => {
   }, []);
 
   return (
+    <div>
+        <ScrollToTop>
+          <Header />
+          <Switch>
+            <Route path="/about" component={About} />
+          </Switch>
+
     <div className="about">
       <div className="intro__container">
         <span>About</span>
@@ -64,6 +75,8 @@ const About = () => {
         </div>
       </section>
       <Footer />
+    </div>
+    </ScrollToTop>
     </div>
   );
 }
